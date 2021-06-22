@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace Socoban
 {
@@ -26,6 +27,12 @@ namespace Socoban
             board_H = GameRule.Board_H;
 
             SetClientSizeCore(board_W, board_H);
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Bitmap bitmap = new Bitmap("Character4.png");
+            e.Graphics.DrawImage(bitmap, 500, 350);
         }
     }
 }
