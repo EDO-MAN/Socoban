@@ -6,6 +6,7 @@ namespace Socoban
 {
     public partial class Form1 : Form
     {
+        Player ply;
         int board_W;
         int board_H;
 

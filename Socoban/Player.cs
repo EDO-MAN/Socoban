@@ -4,12 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
-using System.Drawing.Imaging;
+using System.Windows.Forms;
+
 
 namespace Socoban
 {
     class Player
     {
+        public void Character()
+        {
+
+        }
         public int X//캐릭터 X좌표
         {
             get;
