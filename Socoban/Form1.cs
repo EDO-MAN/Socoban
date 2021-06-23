@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
+using System.Drawing;
 
 namespace Socoban
 {
@@ -19,6 +12,7 @@ namespace Socoban
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,8 +25,8 @@ namespace Socoban
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            Bitmap bitmap = new Bitmap("Character4.png");
-            e.Graphics.DrawImage(bitmap, 500, 350);
+            Image player = Image.FromFile("Character4.png");
+            e.Graphics.DrawImage(player, 500, 350);
         }
     }
 }
