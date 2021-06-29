@@ -11,16 +11,17 @@ namespace Socoban
 {
     class Player
     {
-        public void Character()
-        {
-
-        }
         public int X//캐릭터 X좌표
         {
             get;
             private set;
         }
         public int Y//캐릭터 Y좌표
+        {
+            get;
+            private set;
+        }
+        public int MapLevel//현재 맵 레벨
         {
             get;
             private set;
