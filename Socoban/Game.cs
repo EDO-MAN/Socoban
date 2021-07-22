@@ -9,21 +9,21 @@ namespace Socoban
 {
     class Game
     {
-        Player player;
-        public Point NowPosition//현재 플레이어 좌표
-        {
-            get
-            {
-                if(player == null)
-                {
-                    return new Point(0, 0);
-                }
-                return new Point(player.X, player.Y);
-            }
-        }
-        
+        Player player;//플레이어 객체 참조 선언
+        //public Point NowPosition//현재 플레이어 좌표
+        //{
+        //    get
+        //    {
+        //        if(player == null)
+        //        {
+        //            return new Point(0, 0);
+        //        }
+        //        return new Point(X, Y);
+        //    }
+        //}
+
         #region 단일체
-        public static Game Singleton 
+        public static Game Singleton
         {
             get;
             private set;
@@ -32,13 +32,38 @@ namespace Socoban
         {
             Singleton = new Game();
         }
-        #endregion
-        public int MapLevel
+        Game()
         {
-            get
-            {
-                return player.MapLevel;
-            }
+            player = new Player();
         }
+        #endregion
+        //public int MapLevel
+        //{
+        //    get
+        //    {
+        //        return player.MapLevel;
+        //    }
+        //}
+        //public bool MoveLeft()
+        //{
+        //    player.MoveLeft();
+        //    return true;
+        //}
+        //public bool MoveRight()
+        //{
+        //    player.MoveRight();
+        //    return true;
+        //}
+        //public bool MoveUp()
+        //{
+        //    player.MoveUp();
+        //    return true;
+        //}
+        //public bool MoveDown()
+        //{
+        //    player.MoveDown();
+        //    return true;
+        //}
+
     }
 }

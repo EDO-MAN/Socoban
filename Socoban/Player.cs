@@ -14,33 +14,33 @@ namespace Socoban
         public int X//캐릭터 X좌표
         {
             get;
-            private set;
-        }
+            set;
+        } = 5;
         public int Y//캐릭터 Y좌표
         {
             get;
-            private set;
-        }
-        public int MapLevel//현재 맵 레벨
-        {
-            get;
-            private set;
-        }
+            set;
+        } = 5;
+        //public int MapLevel//현재 맵 레벨
+        //{
+        //    get;
+        //    private set;
+        //}
         public void MoveDown()
         {
-            Y++;
+            ++Y;
         }
         public void MoveUp()
         {
-            Y--;
+            --Y;
         }
         public void MoveLeft()
         {
-            X--;
+            --X;
         }
         public void MoveRight()
         {
-            X++;
+            ++X;
         }
     }
 }
