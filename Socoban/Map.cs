@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Socoban
 {
+    enum Tile
+    {
+        ROCK = 1,
+        ROAD,
+        BALL,
+        GOAL
+    }
+
     static class Map
     {
+        
         //1 = 벽돌
         //2 = 길
         //3 = 공
